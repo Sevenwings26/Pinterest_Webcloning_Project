@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    height: 13vh;
+    width: 100%;
+    position: fixed;
+    background-color: #00261A;
+    /* border-bottom: 1px solid #CDF9CD; */
+}
+header nav{
+    min-height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+header nav .logo h3{
+    color: #CDF9CD;
+}
+header nav .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+header nav ul li{
+    margin-left: 2rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #CDF9CD;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+/* dropbox */
+.dropdown{
+    width: 100%;
+    background-color: #CDF9CD;
+
+}
+ul li ul.dropdown li{
+    width: 100%;
+    display: block;
+    padding: 25px ;
+    line-height: 1;
+    background-color: #CDF9CD;
+}
+ul li ul.dropdown li a{
+    color: #00261A;
+}
+ul li ul.dropdown{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    background-color: rgb(22, 22, 22);
+    text-align: start;
+    width: 100%;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    transition: 2s;
+    width: 100%;
+}
+
+
+.action{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#login_botton{
+    height: 40px;
+    width: 80px;
+    border-radius: 2rem;
+    border: 2px solid #CDF9CD;
+    background-color:   #00261A;
+    color: #CDF9CD;
+    font-size: 16px;
+    font-weight: 500;
+}
+#signup_button{
+    height: 40px;
+    width: 80px;
+    border-radius: 2rem;
+    border: 1px solid #CDF9CD;
+    color: #00261A;
+    background-color: #CDF9CD;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* main body */
+main {
+    position: absolute;
+    z-index: -2;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #00261A;
+}
+main .container{
+    height: 150vh;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 4rem;
+}
+main .container .content{
+    width: 65%;
+    height: 200vh;
+    margin: auto;
+    height: inherit;
+    padding-top: 14rem;
+}
+main .container .content .p-1container{
+    width: 100%;
+    height: 189px;
+    padding: 40px 0px;
+}
+main .container .content .p-1container .p-1{
+    font-size: 90px;
+    font-weight: 500;
+    color: #CDF9CD;
+    margin: auto;
+    text-align: center;
+    /* padding-left: 1rem; */
+}
+main .container .content .p-2container{
+    width: 100%;
+    height: 270px;
+    padding: 30px;
+    margin-bottom: 2rem;
+}
+main .container .content .p-2container .p-2{
+    color: #CDF9CD;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+main .container .content .click{
+    width: 100%;
+    height: 100px;
+    /* margin-bottom: 3rem; */
+}
+main .container .content .click .click-a{
+    margin: auto;
+    width: 160px;
+    height: 70px;
+    padding: 20px 23px;
+    border-radius: 70px;
+    border: 2px solid #CDF9CD;
+}
+main .container .content .click .click-a a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: auto;
+    color: #CDF9CD;
+    /* margin-bottom: 3rem; */
+}
+
+/* carousel styling */
+.carousel-inner{
+    /* position: absolute; */
+    z-index: -1;
+}
+
+.carousel-page1 {
+    height: 109vh;
+    width: 100%;
+    display: flex;    
+}
+.carousel-page1-content{
+    width: 50%;
+    height: 109vh;
+    background-color: #FF7566;
+}
+.carousel-image{
+    width: 50%;
+    height: 109vh;
+    /* background-color: aliceblue; */
+}
+
+.carousel-page2 {
+    height: 109vh;
+    width: 100%;
+    display: flex;    
+}
+.carousel-page2-content{
+    width: 50%;
+    height: 109vh;
+    background-color: #C3F9C2;
+}
+.carousel-image{
+    width: 50%;
+    height: 109vh;
+    /* background-color: aliceblue; */
+}
+
+.carousel-page3 {
+    height: 109vh;
+    width: 100%;
+    display: flex;    
+}
+.carousel-page3-content{
+    width: 50%;
+    height: 109vh;
+    background-color: #FFDFE9;
+}
+.carousel-image{
+    width: 50%;
+    height: 109vh;
+    /* background-color: aliceblue; */
+}
+    /* page 1 carousel  */
+.carousel-page1-content .content-container1{
+    width: 80%;
+    height: 30vh;
+    margin: 8rem auto;
+}
+.carousel-page1-content .content-container1 .theme{
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    color: #280A17;
+}
+.carousel-page1-content .content-container1 p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 25px;
+    color: #280A17;
+}
+.carousel-page1-content .learn-link{
+    margin: auto;
+    width: 160px;
+    height: 70px;
+    padding: 22px 37px;
+    border-radius: 70px;
+    background-color: #280A17;
+} 
+.carousel-page1-content .learn-link a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FF7566;
+}
+/* slicer 2 carousel  */
+.carousel-page2-content .content-container2{
+    width: 80%;
+    height: 60vh;
+    margin: 3rem auto;
+    /* background-color: white; */
+}
+.carousel-page2-content .content-container2 .theme{
+    font-size: 20px;
+    text-align: center;
+    color: #111111;
+    font-weight: 500;
+}
+.carousel-page2-content .content-container2 p{
+    font-size: 50px;
+    text-align: center;
+    padding: 6px;
+    font-weight: 500;
+    color: #111111;
+}
+.carousel-page2-content .learn-link{
+    margin: auto;
+    width: 180px;
+    height: 70px;
+    padding: 22px 37px;
+    border-radius: 70px;
+    font-weight: 500;
+    background-color: #111111;
+} 
+.carousel-page2-content .learn-link a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #C3F9C2;
+}
+
+/* slicer 3 */
+.carousel-page3-content .content-container3{
+    width: 80%;
+    height: 40vh;
+    margin: 2rem auto;
+    background-color: #280A17;
+}
+.carousel-page3-content .content-container3 .theme{
+    font-size: 20px;
+    text-align: center;
+    color: #A30C4A;
+    font-weight: 600;
+}
+.carousel-page3-content .content-container3 p{
+    font-size: 65px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+    color: #A30C4A;
+    padding: 2rem;
+}
+.carousel-page3-content .learn-link{
+    margin: auto;
+    margin-top: 3rem;
+    width: 160px;
+    height: 70px;
+    padding: 22px 37px;
+    border-radius: 70px;
+    font-weight: 500;
+    background-color: #A30C4A;
+} 
+.carousel-page3-content .learn-link a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFDFE9;
+}
+ /* Carousel ends here  */
+/* main .business-actions{
+    width: 100%;
+    height: 120vh;
+    background: #FFFEDB;
+} */

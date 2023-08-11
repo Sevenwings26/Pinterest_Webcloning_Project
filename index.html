@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/CSS/landingpg.css"> -->
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="./landingmediaq.css">
+    <!-- <link rel="stylesheet" href="/CSS/landingpg.css"> -->
+    <title>Pinterest</title>
+    <link rel="shortcut icon" href="./Images/landingpage/logo.favizon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="logo" id="#top">
+                <img src="./Images/pinterest-logo.png" alt="Pinterest.svgfile" width="42px" height="42px">
+                <h3>Pinterest</h3>
+            </div>
+            <div class="links">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./about/about.html" target="_blank">About</a>
+                        </li>
+                        <li>
+                            <a href="./Business/business.html" target="_blank">Business</a>
+                        </li>
+                        <li>
+                            <a href="./Newsroom/newsroom.html" target="_blank">Press</a>
+                        </li>
+                        
+                    </ul>
+                </div>   
+                <div class="action">
+
+<!-- Button trigger modal --> 
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="btn-login">
+    Log in
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+            <!-- Modal title</h1> -->
+                <img src="./Images/pinterest-logo.png" alt="" width="40px" height="40px">
+            
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    
+        <div class="modal-body">
+            <div class="frm">                
+                <form action="get">
+                    <center>
+                        <fieldset>
+                            <h2>Welcome to Pinterest</h2>
+                            <!-- <p>Find new ideas to try</p> -->
+                            <br>
+                            <label for="email"></label>
+                            <div class="text-box">Email address</div> 
+                            <input type="email" name="Email address" id="email" class="input-box" placeholder="Email address"required="required">
+                            <!-- <br><br> -->
+                            <div class="text-box">Password</div>
+                            <label for="password"></label>
+                            <input type="password" name="" id="password" class="input-box" placeholder="Create a password"required="required"> <br>
+                            <a href="#">Forgotten your password?</a>
+                            <button id="continue"   type="submit"><a href="./userpage/account.html" class="log">Log in</a></button>
+                            <p class="or">OR</p>
+                            <button id="fb">
+                                <div><img src="./Images/landingpage/icons8-facebook-24.png" alt="Facebook-icon">
+                                Continue with Facebook</div>
+                            </button>
+                            <button id="google">
+                                <div><img src="./Images/landingpage/" alt="Facebook-icon">
+                                Continue with Facebook</div>
+                            </button>
+                            <div class="p-text">
+                                <span>By continuing, you agree to Pinterest's Terms of Service; Opens a new tab and acknowledge that you've read our Privacy Policy; Opens a new tab. Notice at collection; Opens a new tab.</span>
+                            </div>
+                            <div class="p-text2">
+                            </div>
+                            <div class="p-text3">
+                                <p><strong>Not on Pinterest yet? <a href="#">Sign up</a></strong>
+                                    <br>
+                                    Are you a business? <a href="#">Get started here!</a></p>
+                            </div>
+                    </fieldset>
+                </center>
+                </form> 
+            </div>
+        </div>
+        <!-- <div class="modal-footer"> -->
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal login ends Here -->
+
+<!-- Sign modal  -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="btn-signup">
+    Sign up
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel"> -->
+            <!-- Modal title</h1> -->
+                <img src="./Images/pinterest-logo.png" alt="" width="40px" height="40px">
+            
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    
+        <div class="modal-body">
+            <div class="frm">                
+                <form action="get">
+                    <center>
+                        <fieldset>
+                            <h2>Welcome to Pinterest</h2>
+                            
+                            <p>Find new ideas to try</p>
+                            <br>
+                            <label for="email"></label>
+                            <p class="t">Email address</p> 
+                            <input type="email" name="Email address" id="email" placeholder="Email address"required="required">
+                            <!-- <br><br> -->
+                            <p class="tt">Password</p>
+                            <label for="password"></label>
+                            <input type="password" name="" id="password" placeholder="Create a password"required="required">
+                            <p class="ttt">Date of birth</p>
+                            <input type="date" name="" id="date">
+                            <br>
+                            <button id="continue"   type="submit">Continue</button>
+                            <p class="or">OR</p>
+                            <button id="fb">
+                                <div><img src="" alt="">
+                                Continue with Facebook</div>
+                            </button>
+
+                    <!-- <input type="button" value="Sign up" id="signup_button"> -->
+                    </fieldset>
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <section1>
+        <div class="container1">
+                    <div class="text-box">
+                    <p>Get your next <br> <span>green thumb idea</span></p>
+                    </div>
+            <!-- Using colums and flex-box -->
+            <div class="text-box">
+                <p>Get your next <br> <span style="color: #407A57;">green thumb idea</span></p>
+            </div>
+            <div class="image-right"></div>
+            <div class="middle-box">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3">
+                    <a href="#below"><div class="circle_down"><img src="./Images/landingpage/icons8-chevron-down-30.png" alt="chevron-down"></div></a>                        
+                </div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+            </div>
+            <div class="image-left"></div>
+
+        </div>
+    </section1>
+    <section2>
+        <div class="container2">
+            <div class="content-container">
+            <p class="content"> <a href="#below"> Here's how it works <img src="./Images/landingpage/section1/chevron-down.svg" alt=""></a></p>
+            </div>
+            <div class="internal" id="below">
+                <div class="left_box">
+                    <div class="box_c" >
+                        <div class="search-chicken">
+                            <div class="search">
+                                <img src="./Images/9385963701556258272-128.png" alt="" width="30" height="30">
+                                <h3>easy chicken dinner</h3>
+                            </div>
+                        </div>
+                        <div class="top">
+                            <a href="#">
+                                <img src="./Images/landingpage/section2/topRight-d0230035.png" alt="chicken-soup-image" width="156px" height="205">
+                            </a>
+                        </div>
+                        <div class="left">
+                            <a href="#">
+                                <img src="./Images/landingpage/section2/left-511a9304.png" alt="" width="230" height="300" ></a>
+                        </div>
+                        <div class="center">
+                            <a href="#">
+                                <img src="./Images/landingpage/section2/center-77497603.png" alt="barbeque-chicken-sauce" width="280" height="460">
+                            </a>
+                        </div>
+                        <div class="right">
+                            <a href="#">
+                                <img src="./Images/landingpage/section2/right-88044782.png" alt="" width="166" height="257">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_box">
+                    <div class="right_box_cont">
+                        <h2>Search for an idea</h2>
+                        <p>What do you to try next? Think <br> of something you're into - such as <br> 'easy chicken dinner' - and see what <br> you find.</p>
+                        <div class="explore">
+                        <a href="#">Explore</a></div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section2>
+
+    <section3>
+        <div class="container2">
+            <div class="internal">
+                <div class="right_box">
+                    <div class="right_box_cont">
+                        <h2>Save ideas you like</h2>
+                        <p>Collect your favourites so you can <br>get back to them later.</p>
+                        <div class="explore">
+                        <a href="#">Explore</a></div>  
+                    </div>
+                </div>
+                <div class="left_box">
+                    <div class="box_c">
+                        <div class="leftbottom">
+                            <div class="bathroom">Our</div>
+                            <img src="./Images/landingpage/section3/bathroom-upgrade.png" alt="" width="230" height="220">
+                        </div>
+                        <div class="topright">
+                            <div class="bathroom">My scandinavian bedroom</div>
+                            <img src="./Images/landingpage/section3/scandinavian-bedroom.png" alt="" width="240" height="255">
+                        </div>
+                        <div class="topleft">
+                            <div class="fern">
+                                <p>Fern future home vibes</p>
+                            </div>
+                            <a href="#">
+                                <img src="./Images/landingpage/section3/future-home-vibes.png" alt="future-home-vibes" width="395px" height="430px"></a>
+                                <div class="home1">
+                                    <img src="./Images/landingpage/section3/future-home1.png" alt="future-home1" width="90px" height="130px">
+                                </div>
+                                <div class="home2">
+                                    <img src="./Images/landingpage/section3/future-home2.png" alt="future-home2" width="90px" height="130px">
+                                </div>
+                                <div class="home3">
+                                    <img src="./Images/landingpage/section3/future-home3.png" alt="future-home3" width="90px" height="130px">
+                                </div>
+
+                        </div>
+                        <div class="leftbelow">
+                            <div class="serve">
+                                <p>Serve my drinks in</p>
+                            </div>
+                            <a href="#">
+                                <img src="./Images/landingpage/section3/serve-my-drinks.png" alt="serve-my-drinks" width="230" height="220">
+                            </a>
+                        </div>
+                        <div class="rightmid">
+                            <div class="deck">
+                                <p>The decking of my dreams</p>
+                            </div>
+                            <a href="#">
+                                <img src="./Images/landingpage/section3/deck-of-dreams.png" alt="deck-of-dreams" width="190" height="190">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section3>
+   
+    <section4>
+        <div class="container2">
+            <div class="internal">
+                <div class="left_box">  
+                    <div class="im"></div>
+                    <div class="im-round"></div>
+                    <div class="im-text"><p><strong>Scout the City</strong> 56.7k followers
+                    </p></div>
+                </div>
+                <div class="right_box">
+                    <div class="right_box_cont">
+                        <h2>See it, make it, <br>&nbsp; &nbsp; try it, do it</h2>
+                        <p>The best part of Pinterest is discovering <br> new thingsand ideas from people <br> around the world.</p>
+                        <div class="explore">
+                        <a href="#">Explore</a></div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section4>
+    <section class="signupboard">
+        <a href="#top">
+            <div class="scrollup">
+                <img src="./Images/landingpage/icons8-chevron-up-30.png" alt="scrollup" width="30px" height="30px">
+            </div>
+            </a>
+        <div class="box1">
+            <h2>Sign up to <br>get your <br>ideas</h2>
+        </div>
+        <div class="box2">
+            <div class="form-container">
+                <form action="">
+                    <center>
+                    <fieldset>
+                        <img src="./Images/pinterest-logo.png" alt="" width="40px" height="40px">
+                        <h2>Welcome to Pinterest</h2>        
+                        <p>Find new ideas to try</p>
+                        <label for="email"></label>
+                        <div class="text-box">Email address</div> 
+                        <input type="email" name="Email address" id="email" class="input-box" placeholder="Email address"required="required">
+                    <div class="text-box">Password</div>
+                    <label for="password"></label>
+                    <input type="password" class="input-box" name="" id="password" placeholder="Create a password"required="required">
+                    
+                    <div class="text-box">Date of birth</div>
+                    <input type="date" name="" id="date" class="input-box">
+                    <br>
+                    <button id="continue"   type="submit">Continue</button>
+                    <p class="or">OR</p>
+                    <button id="fb">
+                        <div><img src="./Images/landingpage/icons8-facebook-24.png" alt="">                        Continue with Facebook</div>
+                    </button>
+            
+                    </fieldset>
+                </center>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section5> -->
+            
+        <!--             </div>
+            <a href="#top">
+            <div class="scrollup">
+                <img src="./Images/landingpage/icons8-chevron-up-30.png" alt="scrollup" width="30px" height="30px"> </a>
+            </div>
+            <div class="fm">                
+                <form action="get">
+                    <center>
+                        <fieldset>
+                            <img src="./Images/pinterest-logo.png" alt="" width="40px" height="40px">
+                            <h2>Welcome to Pinterest</h2>
+                            
+                            <p>Find new ideas to try</p>
+                            <br>
+                            <label for="email"></label>
+                            <p class="t">Email address</p> 
+                            <input type="email" name="Email address" id="email" placeholder="Email address"required="required">
+                            <br><br>
+                            <p class="tt">Password</p>
+                            <label for="password"></label>
+                            <input type="password" name="" id="password" placeholder="Create a password"required="required">
+                            <p class="ttt">Date of birth</p>
+                            <input type="date" name="" id="date">
+            
+                            <br>
+                            <button id="continue"   type="submit">Continue</button>
+                            <p class="or">OR</p>
+                            <button id="fb">
+                                <div><img src="./Images/landingpage/icons8-facebook-24.png" alt="">
+                                Continue with Facebook</div>
+                            </button>
+                            </div>
+                    </center>
+                    </form>
+                </div>
+        </div> -->
+    <!-- </section5> -->
+    <footer>
+        <a href="#">Terms of Service</a> &nbsp;
+        <a href="#">Privacy Policy</a> &nbsp;
+        <a href="#">Help</a> &nbsp;
+        <a href="#">iPhone app</a>&nbsp;
+        <a href="#">Android app</a>&nbsp;
+        <a href="#">Users</a>&nbsp;
+        <a href="#">Collections</a>&nbsp;
+        <a href="#">Today</a>&nbsp;
+        <a href="#">Explore</a>&nbsp;
+        <a href="#">Watch</a>&nbsp;
+        <a href="#">Shop</a>&nbsp;
+    </footer>
+</body>
+</html>
+
+
